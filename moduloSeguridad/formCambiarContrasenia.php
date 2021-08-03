@@ -1,44 +1,48 @@
 <?php
-	
-	class formCambiarContrasenia
+	include_once("../shared/formularioGeneral.php");
+	class formCambiarContrasenia extends formulariogeneral
 	{
 		public function formCambiarContraseniaShow($login)
 		{
-			
+			$this->cabezaShow("CAMBIAR CONTRASE&Ntilde;A");
 			?>
 			<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 			<html xmlns="http://www.w3.org/1999/xhtml">
 			<head>
-			<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-			<title>CAMBIAR CONTRASEÑA</title>
+				<!-- CSS -->
+				<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+				<link rel="stylesheet" href="../css/style.css">
+				<!-- CSS -->
 			</head>
 			
 			<body>
-			<table  align="center" width="200" border="0">
-			<form method="post" action="getPassword.php">
+			<table align="center" width="200" border="0">
+			<form  method="post" action="getPassword.php">
 			 <tr>
-			 	
-				<td><label>Usuario:</label><?php echo $login; ?></td>
+				<h3><label >Usuario: </label><?php echo $login; ?></h3>
 			  </tr>
 			  <tr>
-				<td><label>Contraseña Actual:</label><input  name="apassword" type="password" placeholder="ingrese contraseña actual"/></td>
+				<td align="left"><input name="apassword" type="password" placeholder="Ingrese contrase&ntilde;a actual"/></td>
 			  </tr>
 			  <tr>
-				<td><label>Nueva Contraseña:</label><input  name="npassword" type="password" placeholder="ingrese nueva contraseña"/></td>
+				<td align="left"><input  name="npassword" type="password" placeholder="Ingrese nueva contrase&ntilde;a"/></td>
 			  </tr>
 			  <tr>
-				<td><label>Confirme Contraseña:</label><input  name="cnpassword" type="password" placeholder="Confirme Contraseña"/>
+				<td align="left"><input  name="cnpassword" type="password" placeholder="Confirme Contrase&ntilde;a"/>
 				  <label>
-				  <input type="submit"  id="btncc" name="btncc" value="Cambiar Contrase&ntilde;a" />
+				  <input type="submit"  id="btncc" name="btncc" value="Cambiar contrase&ntilde;a" />
+				  <input type="submit" name="SubmitP" value="Volver" />
 			    </label></td>
 			  </tr>
-			  
 			  </form> 
 			</table>
-
+			
+			</div>
+			</div>
 			</body>
 			</html>
 			<?php
+			$this->piePaginaShow();
 			//echo ($login);
 		}
 	}

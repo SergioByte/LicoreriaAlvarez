@@ -11,19 +11,24 @@
 			<head>
 			<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 			<title>Mensaje del Sistema</title>
+				<!-- CSS -->
+				<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+				<link rel="stylesheet" href="../css/style.css">
+				<!-- CSS -->
 			</head>
 			
 			<body>
+			<form name="Login" method="POST">
 			<p align="center">
 			<strong>
 				<?php echo $mensaje;?>
-				
 			</strong>
 			</p>
 			<p align="center">
 				<?php echo $enlace;?>  
 					
 			</p>
+			</form>
 			</body>
 			</html>
 		<?php

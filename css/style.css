@@ -1,0 +1,230 @@
+@import url('http://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+body, html {
+  height: auto;
+}
+
+/* General */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  background-image: url("../fondo3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Input Forms*/
+input[type="text"], input[type="password"]{
+  outline: none;
+  padding: 20px;
+  display: block;
+  width: 300px;
+  border-radius: 3px;
+  border: 1px solid #eee;
+  margin: 20px auto;
+}
+
+input[type="submit"] {
+  padding: 10px;
+  color: #fff;
+  background: #0098cb;
+  width: 320px;
+  margin: 20px auto;
+  margin-top: 0;
+  border: 0;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #00b8eb;
+}
+
+/* Header */
+header {
+  border-bottom: 2px solid #eee;
+  padding: 20px 0;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+header a {
+  text-decoration: none;
+  color: #333;
+}
+
+/*** Footer**/
+footer{
+  background: rgb(27, 13, 156);
+  height: auto;
+  width: auto;
+  padding-top: 10px;
+  margin-top: 150px;
+  color: #fff;
+}
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-copy{
+  background: rgb(68, 0, 156);
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-content h3{
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+.footer-content p{
+  max-width: auto;
+  max-height: 10px auto;
+  font-size: 14px;
+}
+
+/* GENERAR PROFORMA */
+
+input[name="SubmitP"] {
+  padding: 10px;
+  color: #fff;
+  background: #0098cb;
+  width: 200px;
+  margin: 10px auto;
+  margin-top: 0;
+  border: 0;
+  border-radius: 3px;
+  cursor: pointer;
+  text-align: center;
+}
+
+input[name="SubmitP"]:hover {
+  background-color: #00b8eb;
+  text-align: center;
+}
+
+button[name="Agregar"] {
+
+  color: #00b679;
+  background-color: rgba(94, 206, 112, 0);
+  margin: 10px auto;
+  margin-top: 0;
+  border: 0;
+  border-radius: 3px;
+  cursor: pointer;
+  text-align: center;
+}
+
+button[name="Buscar"] {
+  padding: 10px;
+  color: #fff;
+  background: #00b679;
+  width: 70px;
+  margin-top: 0;
+  border: 0;
+  border-radius: 3px;
+  cursor: pointer;
+  text-align: center;
+}
+
+input[type="textP"]{
+  outline: none;
+  padding: 10px;
+  display: block;
+  width: 300px;
+  border-radius: 3px;
+  border: 1px solid #eee;
+  margin: 10px auto;
+}
+
+#padre{
+				
+  display:flex;
+  flex-direction:column;
+}
+#contenttablas{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-evenly;
+  
+}
+
+#contentproductos{
+  float:left;
+  
+}
+#contentproductoslista{
+  float:right;
+  
+}
+#cantidadcelda{
+  width:10%;
+  height:auto;
+}
+#ventana{
+  background:#FFFFFF;
+  position:absolute;
+  left:34%;
+  display:none;
+}
+
+
+th, td {
+  padding: 10px;
+}
+
+table[name="tabla1"]{
+  background-color: #ffffff1e;
+  text-align: center;
+  border-collapse: collapse;
+  width: 534px;
+  font-size: 15px;
+
+}
+thead{
+  background-color: #391196;
+  border-bottom: solid 5px #19083f;
+  color: white;
+
+}
+
+h1[name="titulo"]{
+  background-color: #0000008c;
+  
+  margin-left: -80px;
+  border-collapse: collapse;
+  width: 95%;
+  height: 45px;
+  font-size: 30px;
+  color: white;
+  padding: 20px;
+
+}
+ 
+.form-box {
+  border-radius: 1px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.048);
+  text-align: center;
+}
+/* 
+
+tr:nth-child(even){
+  background-color: #00000034;
+}
+
+*/
+
+/* FONDO DE LAS OPCIONES DEL MENÚ PRINCIPAL
+.form-box {
+  border-radius: 15px;
+  width: 300px;
+  background: rgba(0, 0, 0, 0.774);
+  text-align: center;
+}
+*/

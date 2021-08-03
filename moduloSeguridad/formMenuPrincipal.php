@@ -13,27 +13,25 @@
 			for($i=0;$i<$numeroPrivilegios;$i++)
 			{
 			?>
-				
-				<table align="center"  width="394" border="1">
+				<!-- CSS -->
+				<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+				<link rel="stylesheet" href="../css/style.css">
+				<!-- CSS -->
+				<table class="form-box" align="center"  width="394" border="0">
 				 
 				  <tr>
 					<td width="388">
 					<form action="<?php echo($privilegios[$i]['path']);?>" method="post">
-						<label><?php echo($privilegios[$i]['label']);?></label>
-						<input type="submit" name="<?php echo($privilegios[$i]['btn']);?>" id="<?php echo($privilegios[$i]['btn']);?>" value="->" />
+						<input type="submit" name="<?php echo($privilegios[$i]['btn']);?>" id="<?php echo($privilegios[$i]['btn']);?>" value="<?php echo($privilegios[$i]['label']);?>" />
 					</form>
 					</td>
 				
 				  </tr>
 		
-				</table>
-
-				<?php
-				
-			} 
-			
-			 //echo $_SESSION['login'];
-			
-		}
-	}
+                  <?php	}	?>
+              </table>
+            <?php          
+            $this->piePaginaShow();
+      }
+    }
 ?>
